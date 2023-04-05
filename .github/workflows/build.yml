@@ -17,8 +17,13 @@ jobs:
         with:
           root_file: cv.tex
 
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
+      # - name: Upload PDF file
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: PDF
+      #     path: cv.pdf
+
+      - name: Release CV
+        uses: softprops/action-gh-release@v1
         with:
-          name: PDF
-          path: cv.pdf
+          files: cv.pdf
