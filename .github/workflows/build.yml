@@ -27,3 +27,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: cv.pdf
+          tag_name: latest
