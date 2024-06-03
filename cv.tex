@@ -10,7 +10,6 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-% \usepackage[default]{lato}
 \usepackage{tgheros}
 \renewcommand*\familydefault{\sfdefault} 
 
@@ -18,6 +17,9 @@
 \usepackage{mathpazo}
 \usepackage{textcomp}
 \usepackage{multicol}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 
 \setcolorscheme{blue}
 \setlength\multicolsep{0pt}
@@ -35,38 +37,43 @@
   \homepage{www.jakef.dev}
   \linkedin{jake-fawcett}
   \github{jake-fawcett}
-  % \location{London/Leeds, UK}
+  \location{London, UK}
 }
 
-\bio{A motivated Platform Engineer with a passion for solving complex solve problems, always striving to learn.}
+\bio{A motivated Platform Engineer with a passion for solving complex solve problems, always striving to learn. 
+
+\textbf{Certified Azure Architect, DevOps Expert and Administrator}}
 
 \makecvheader
 
 \cvsection{Experience}
 
-\cvexperience{Azure Platform Engineer}{BJSS Ltd, London}{September 2021 -- }{}{}
+\bigskip
+
+\cvexperience{Azure Platform Engineer}{BJSS Ltd}{September 2021 -- }{London}{Azure, Databricks, Azure Pipelines, Bicep}
 \begin{itemize}
-  \item Deploying and maintaining Infrastructure in Azure using Azure DevOps, Azure Pipelines, ARM and Bicep.
-  \item Enhancing existing infrastructure deployment, security and development processes of existing Infrastructure and teams.
-  \item Supporting new and ongoing dataset onboardings from a range of source systems.
+  \item Design, Deployment and Knowledge sharing of \textbf{Databricks Unity Catalog} to centralized access control, auditing, lineage, and data discovery capabilities for the entire organisation.
+  \item Successfully built a library of components |and documentation with \textbf{Bicep and Azure Pipelines} which have drastically reduced data onboarding overhead, and project maintenance.
+  \item Empowered the first client data team, and new 3rd party teams to onboard their own Data through \textbf{Coaching, Support and deployment of Infrastructure}.
+  \item Assisted in Agile Transformation of technology teams by driving efficient ceremonies, \textbf{producting metrics and dashboards}, and \textbf{tooling including Pre-commit and Build Validation Pipelines}.
+  \item Improvements to Infrastructure security by Building \textbf{CIS Hardened Build Agents}, with a migration to \textbf{Private Endpoints}, Automation of the Role Assignment process.
 \end{itemize}
 
-\divider
+\bigskip
 
-\cvexperience{Software Engineer}{Versed AI, London}{December 2020 -- September 2021}{}{}
+\cvexperience{Software Engineer}{Versed AI}{December 2020 -- September 2021}{London}{Python, ETL, Javascript}
 \begin{itemize}
   \item Created Python applications to extract, transform and load data from a range of sources.
   \item Developed scripts to automate previously manual tasks to improve efficiency and delivery.
   \item Designed UI templates for new sites and deployed new features to React Javascript website.
 \end{itemize}
 
-\divider
+\bigskip
 
-\cvexperience{Software Engineer Intern}{Amadeus IT Services UK Ltd, London}{Jul 2019 -- July 2020}{}{}
+\cvexperience{Software Engineer Intern}{Amadeus IT Services UK Ltd}{Jul 2019 -- July 2020}{London}{Python, API, Javascript}
 \begin{itemize}
   \item Created a Proof of Value application for Airport Agents with a Python ReST API, Angular and MongoDB.
-  \item Worked with stakeholders, in an Agile environment to gather requirements and create a high quality product.
-  \item Developed my knowledge of Angular, Typescript, Testing Frameworks and UX Design.
+  \item Developed my knowledge of Angular, Typescript, Testing Frameworks and UX Design in an Agile environment.
 \end{itemize}
 
 \divider
@@ -75,49 +82,59 @@
 \bigskip
 \cvsubsection{Technical Skills and Projects}
 
-\begin{multicols}{2}
-  \cvlistitem{Skills}{Proficient in \textbf{Python, Azure Pipelines, ARM} \\
-Experienced in \textbf{Azure (Databricks, Datafactory, Storage), Bicep} \\
-Familiar in \textbf{Terraform, Javascript} \\}
+\bigskip
+
+\cvlistitem{Skills}{Proficient with \textbf{Azure Pipelines, Azure DevOps, Databricks, Python, ARM/Bicep} \\
+Experienced with \textbf{Azure Datafactory, Azure Networking, Agile, git} \\
+Familiar with \textbf{Terraform, Javascript, Github Actions} \\}
 \divider
-  \cvlistitem{Rust Web Server}{Tools: \textbf{Rust, Docker, Github CI}\\
-A project using rust to build a Portfolio website to improve my knowledge of rust, docker and github actions!
+
+\begin{multicols}{2}
+
+\cvlistitem{jakef.dev}{Tools: \textbf{Github, Jekyll (Ruby)}\\
+A project built with Github Pages and Jekyll to build a Portfolio website and Blog with posts related to Platform Engineering and Softare development.
 }  
 \divider
-  \cvlistitem{Platform Tetris Leaderboard}{Tools: \textbf{Python, Bicep, Azure Pipelines, Github CI}\\
-Developed using flask, and deployed to Azure with Bicep, Azure Pipelines and optionally Github CI
+\cvlistitem{Football Manager player evaluator}{Tools: \textbf{Python}\\
+Python application to evaluate players against attribute scalings with Python and Pandas.
 }
 \divider
-  \cvlistitem{Advent of Code 2022}{Tools: \textbf{Go, Terraform, Azure Pipelines}\\
-Coding challenges completed with Golang and deployed to a Webapp with Terraform and Azure Pipelines
+\cvlistitem{Advent of Code}{Tools: \textbf{Python, Go, Terraform, Powershell}\\
+Coding challenges completed with Python (2021), Golang  deployed to a Webapp with Terraform and Azure Pipelines (2022), Powershell (2023).
+}
+\divider
+\cvlistitem{Keyboard WPM WebApp}{Tools: \textbf{Python, Docker, Terraform}\\
+Keyboard WPM app with Python and Azure Table Storage deployed to Azure Container Instance with Terraform using a Caddy Sidecar for HTTPS.
+}
+\divider
+\cvlistitem{Tetr.io Leaderboard Webapp}{Tools: \textbf{Python, Github Actions, Bicep}\\
+Tetris Leaderboard with Python and Azure WebApps deployed with Github Actions and Bicep.
+}
+\divider
+  \cvlistitem{Others}{Tools: \textbf{Rust, Docker, Python}\\
+Rust Docker Portfolio site, Latex CV publish with Github Actions, Azure Precommit Hooks and Utils, Python Wagtail local CDN.
 }
 \hspace{0pt}
 \end{multicols}
 
 \bigskip
-\cvsection{Key Certifications}
+
+\cvsection{Certifications}
 \bigskip
-\begin{multicols}{2}
-
-  \cvuniversity{Azure Solutions Architect}{}{Obtained Feb 2024}{} % last param is location
-  \cvuniversity{Azure DevOps Engineer Expert}{}{Obtained April 2022, Renewed March 2024}{}
+\begin{multicols}{4}
   
-  \hspace{0pt}
-\end{multicols}
-\begin{multicols}{2}
+  \cvlistitem{\includegraphics[scale=0.1]{azure-solution-architect}}{Azure Solutions Architect}
+  \cvlistitem{\includegraphics[scale=0.125]{aws-cloud-practitioner}}{AWS Cloud Practitioner}
 
-  \cvuniversity{Terraform Associate}{}{Obtained April 2023}{} % last param is location
-  \cvuniversity{Azure Administrator Associate}{}{Obtained April 2022, Renewed March 2024}{}
-  
-  \hspace{0pt}
-\end{multicols}
+  \cvlistitem{\includegraphics[scale=0.75]{azure-devops-engineer-expert}}{Azure DevOps Engineer}
+  \cvlistitem{\includegraphics[scale=0.115]{professional-scrum-master-1}}{Professional Scrum Master 1}
 
-\begin{multicols}{2}
+  \cvlistitem{\includegraphics[scale=0.75]{azure-administrator-associate}}{Azure Administrator}
+  \cvlistitem{\includegraphics[scale=0.185]{databricks-platform-administrator}}{Databricks Administrator}
 
-  \cvuniversity{AWS Certified Cloud Practitioner}{}{Obtained July 2022}{}
-  \cvuniversity{Databricks Platform Administrator}{}{Obtained Nov 2023}{}
+  \cvlistitem{\includegraphics[scale=0.125]{terraform-associate}}{Terraform Associate}
+  \cvlistitem{\includegraphics[scale=0.75]{azure-fundamentals}}{Azure, Data, AI, Security and Power Platform}
 
-  \hspace{0pt}
 \end{multicols}
 
 \bigskip
@@ -125,9 +142,9 @@ Coding challenges completed with Golang and deployed to a Webapp with Terraform 
 \bigskip
 \begin{multicols}{2}
 
-  \cvuniversity{BEng Computer Science}{University of York}{2017 -- 2021}{}% last param is location
+  \cvuniversity{BEng Computer Science}{University of York}{2017 -- 2021}{York}
   \begin{itemize}
-      \item \textit{Predicted Grade}: 1st
+      \item \textit{Grade}: 1st
       \item \textit{Dissertation}: Machine Learning to detect DDoS Attacks
       \item \textit{Modules in}: Software Engineering, Machine Learning, Security and Real-time Systems
   \end{itemize}
