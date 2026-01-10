@@ -17,6 +17,7 @@
 \usepackage{mathpazo}
 \usepackage{textcomp}
 \usepackage{multicol}
+\usepackage[none]{hyphenat}
 
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
@@ -37,12 +38,13 @@
   \homepage{www.jakef.dev}
   \linkedin{jake-fawcett}
   \github{jake-fawcett}
-  \location{London, UK}
+  \location{Leeds, UK}
 }
 
-\bio{A motivated Platform/DevOps Engineer with a passion for solving complex solve problems, always striving to learn. 
+\bio{\textbf{Azure Architect, DevOps Expert and Administrator with experience with Databricks and Unity Catalog.}
 
-\textbf{Certified Azure Architect, DevOps Expert and Administrator}}
+\smallskip
+Delivering reliable and secure Azure Solutions and driving successful project outcomes through Infrastructure as Code, Agile, DevOps and Cloud native solutions.}
 
 \makecvheader
 
@@ -50,19 +52,55 @@
 
 \bigskip
 
-\cvexperience{Azure Platform Engineer}{BJSS Ltd}{September 2021 -- }{London/Leeds}{Azure, Databricks, Azure Pipelines, Bicep}
+\cvexperience{Senior Platform Engineer}{CGI}{July 2025 -- }{Leeds}{Azure, Databricks, Azure Pipelines, Bicep, Terraform, Agile}
+
+\bigskip
+
+Leading Platform Engineer focused on transitioning the client to DevOps, reducing operational inefficiencies and developing new solutions to accelerate user adoption of a critical data platform. Accountable for standards, designing solutions for complex problems, and interfacing with 3rd parties and suppliers.
+
+\bigskip
+
 \begin{itemize}
-  \item Design, Deployment and Knowledge sharing of \textbf{Databricks Unity Catalog} to centralized access control, auditing, lineage, and data discovery capabilities for the entire organisation.
-  \item Successfully built a library of components |and documentation with \textbf{Bicep and Azure Pipelines} which have drastically reduced data onboarding overhead, and project maintenance.
-  \item Empowered the first client data team, and new 3rd party teams to onboard their own Data through \textbf{Coaching, Support and deployment of Infrastructure}.
-  \item Assisted in Agile Transformation of technology teams by driving efficient ceremonies, \textbf{producting metrics and dashboards}, and \textbf{tooling including Pre-commit and Build Validation Pipelines}.
-  \item Improvements to Infrastructure security by Building \textbf{CIS Hardened Build Agents}, with a migration to \textbf{Private Endpoints}, Automation of the Role Assignment process.
-  \item Numerous presentations to both internal teams and client teams as a \textbf{SME on Databricks and Unity Catalog}, including a whitepaper on Databricks Serverless.
+  \item Creation of HLDs, LLDs and Development of a new lightweight Databricks Innovation Platform and Analytical Scratchpad, to empower analysts and engineers to develop data products. With an established path to production, lowering overhead and increasing value.
+  \item Successful migration of Databricks infrastructure components to Terraform from a range of other tools significantly reducing complexity, maintenance overheads and engineering satisfaction. This included defining standards, best practises and reusable modules.
+  \item Liaising with the clients security team to manage and mitigate security risks, management of Defender for Cloud and implementation of improvements to the Platforms security posture, ensuring compliance with standards.
+  \item Development of improvements and automation to recurring maintenance tasks thought automated pipelines using Azure CLI and Bash, to reduce operational overhead and improving reliability through standardisation.
+  \item Implemented and administered networking configurations including Azure Firewall, Network Security Groups, Serverless Egress Control and Network connectivity configurations.
+  \item Influenced decision making through clear communication of complex technical concepts to internal and external stakeholders, ensuring alignment across teams.
 \end{itemize}
 
 \bigskip
 
-\cvexperience{Software Engineer}{Versed AI}{December 2020 -- September 2021}{London}{Python, ETL, Javascript}
+\cvexperience{Platform Engineer}{BJSS Ltd}{September 2021 -- June 2025}{London/Leeds}{Azure, Databricks, Azure Pipelines, Bicep, ARM, Agile}
+
+\bigskip
+
+Platform Engineer developing new Tooling to accelerate data onboardings, improve data usage and align Infrastructure Code and Pipelines to modern standards and best practises. Influential in the direction of Platform Infrastructure, and essential to meeting the clients key delivery goals leading to the successful long-term retender.
+
+\bigskip
+
+\begin{itemize}
+  \item Successfully built a library of components and documentation including Bicep Modules and Azure Pipeline Templates, which have drastically reduced data onboarding overhead, and project maintenance.
+  \item Empowered the first client data team, and new 3rd party teams to onboard their own Data through Coaching, Support and deployment of Infrastructure.
+  \item Assisted in Agile Transformation of technology teams by driving efficient ceremonies, producing metrics and dashboards, and tooling including Pre-commit and Build Validation Pipelines.
+  \item Improvements to Infrastructure security by building CIS Hardened Golden images for Build Agents, with a migration to Private Networking, Automation of the Role Assignment process and permissions design.
+  \item Numerous presentations to both internal teams and client teams as a SME on Databricks and Unity Catalog, including a whitepaper on Databricks Serverless and discussions with clients across multiple industries on best practise.
+  \item Mentoring of junior engineers and graduates to get them started in Platform Engineering, including teaching core concepts, developing training plans and ongoing support with their projects and progress.
+  \item Implementation of Azure Monitor Private Link Scope, Data Collection Endpoints and Data Collection Rules to allow Private application logging and monitoring.
+  \item Development of a repeatable Infrastructure pattern for providing data to 3rd parties securely using Azure App Service.
+  \item Creation of Infrastructure as Code, Pipelines and Scripts to deploy and configure Postgres database for Geospatial data.
+\end{itemize}
+
+\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip
+
+\cvexperience{Software Engineer}{Versed AI}{December 2020 -- September 2021}{London}{Python, ETL, Pandas, Javascript, React}
+
+\bigskip
+
+Software Engineer using Supply Chain data to empower businesses to understand their supply chain risks by improving visibility. Working with Python for Extract, transform, and load (ETL) data workflows and Javascript for the development for a front-end product for Data Annotation to drive improvements.
+
+\bigskip
+
 \begin{itemize}
   \item Created Python applications to extract, transform and load data from a range of sources.
   \item Developed scripts to automate previously manual tasks to improve efficiency and delivery.
@@ -71,55 +109,20 @@
 
 \bigskip
 
-\cvexperience{Software Engineer Intern}{Amadeus IT Services UK Ltd}{Jul 2019 -- July 2020}{London}{Python, API, Javascript}
+\cvexperience{Software Engineer Intern}{Amadeus IT Services UK Ltd}{Jul 2019 -- July 2020}{London}{Python, APIs, Javascript, Angular}
 \begin{itemize}
-  \item Created a Proof of Value application for Airport Agents with a Python ReST API, Angular and MongoDB. Developing my knowledge of Angular, Typescript, Testing Frameworks and UX Design in an Agile environment.
+  \item Created a Proof of Value application to improve the experience of Airport Agents and passengers with accessibility requirements in need of assistance with embarkation and disembarkation. This involved the design, development and testing of a Python ReST API, Angular frontend and MongoDB database.
 \end{itemize}
 
 \divider
 
-
-\bigskip
-\cvsubsection{Technical Skills and Projects}
-
 \bigskip
 
-\cvlistitem{Skills}{Proficient with \textbf{Azure Pipelines, Azure DevOps, Databricks, Python, ARM/Bicep} \\
-Experienced with \textbf{Azure Networking, Agile/Scrum, git, Terraform, Github Actions} \\}
-\divider
-
-\begin{multicols}{2}
-
-\cvlistitem{jakef.dev}{Tools: \textbf{Github, Jekyll (Ruby)}\\
-A project built with Github Pages and Jekyll to build a Portfolio website and Blog with posts related to Platform Engineering and Softare development.
-}  
-\divider
-\cvlistitem{Football Manager player evaluator}{Tools: \textbf{Python}\\
-Python application to evaluate players against attribute scalings with Python and Pandas.
-}
-\divider
-\cvlistitem{Advent of Code}{Tools: \textbf{Python, Go, Terraform, Powershell}\\
-Coding challenges completed with Python (2021), Golang  deployed to a Webapp with Terraform and Azure Pipelines (2022), Powershell (2023).
-}
-\divider
-\cvlistitem{Keyboard WPM WebApp}{Tools: \textbf{Python, Docker, Terraform}\\
-Keyboard WPM app with Python and Azure Table Storage deployed to Azure Container Instance with Terraform using a Caddy Sidecar for HTTPS.
-}
-\divider
-\cvlistitem{Tetr.io Leaderboard Webapp}{Tools: \textbf{Python, Github Actions, Bicep}\\
-Tetris Leaderboard with Python and Azure WebApps deployed with Github Actions and Bicep.
-}
-\divider
-  \cvlistitem{Others}{Tools: \textbf{Rust, Docker, Python}\\
-Rust Docker Portfolio site, Latex CV publish with Github Actions, Azure Precommit Hooks and Utils, Python Wagtail local CDN.
-}
-\hspace{0pt}
-\end{multicols}
+\cvsubsection{Technical Skills and Certifications}
 
 \bigskip
 
-\cvsection{Certifications}
-
+\cvlistitem{Certifications}
 {\normalfont
   A wide range of technical certifications including: \
   \smallskip
@@ -128,15 +131,22 @@ Rust Docker Portfolio site, Latex CV publish with Github Actions, Azure Precommi
     \begin{itemize}
       \item Azure Solutions Architect Expert.
       \item Azure DevOps Expert.
-      \item Azure Administrator Associate 
+      \item Azure Administrator Associate.
       \item Azure Network Engineer Associate.
-      \item Databricks Certified Data Engineer Associate.
       \item Terraform Associate (003).
-      \item AWS Certified Cloud Practitioner.
+      \item Kubernetes and Cloud Native Associate (KCNA).
       \item Professional Scrum Master I (PSM I).
+      \item Databricks Certified Data Engineer Professional.
     \end{itemize}
   \end{multicols}
 }
+
+\cvlistitem{Skills}{
+  
+Proficient with \textbf{Azure Pipelines, Azure DevOps, Databricks, Python, ARM/Bicep, Agile, DevOps} \\
+
+Experienced with \textbf{Terraform, Azure Networking, git, Bash, Technical design, Stakeholder management} \\}
+\divider
 
 \bigskip
 \cvsection{Education}
@@ -152,7 +162,7 @@ Rust Docker Portfolio site, Latex CV publish with Github Actions, Azure Precommi
 
   \cvuniversity{A-Levels and GCSEs}{Heckmondwike Grammar School}{2010 -- 2017}{}
   \begin{itemize}
-      \item 4 A-Level’s, Grade B \\ (Computer-Science, Maths,  Economics, Physics)
+      \item 4 A-Level’s, Grade B \\ (Computer-Science, Maths, Economics, Physics)
       \item 12 GCSE’s and FSMQ Advanced Maths, Grades A*-C
   \end{itemize}
   \hspace{0pt}
